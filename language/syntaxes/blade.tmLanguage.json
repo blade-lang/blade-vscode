@@ -1,6 +1,6 @@
 {
   "fileTypes": [
-    "blade"
+    "bladeLang"
   ],
   "foldingStartMarker": "\\{\\s*$",
   "foldingStopMarker": "^\\s*\\}",
@@ -10,16 +10,16 @@
       "begin": "^\\w*\\b(import)\\b",
       "beginCaptures": {
         "0": {
-          "name": "keyword.other.import.blade"
+          "name": "keyword.other.import.bladeLang"
         }
       },
       "end": "\n",
       "endCaptures": {
         "0": {
-          "name": "punctuation.terminator.blade"
+          "name": "punctuation.terminator.bladeLang"
         }
       },
-      "name": "meta.declaration.blade",
+      "name": "meta.declaration.bladeLang",
       "patterns": [
         {
           "include": "#strings"
@@ -29,7 +29,7 @@
         },
         {
           "match": "\\b(as)\\b",
-          "name": "keyword.other.import.blade"
+          "name": "keyword.other.import.bladeLang"
         }
       ]
     },
@@ -53,13 +53,13 @@
     }
   ],
   "repository": {
-    "bladedoc": {
+    "bladeLangdoc": {
       "patterns": [
         {
           "match": "(@[a-zA-Z_]+)",
           "captures": {
             "0": {
-              "name": "variable.name.source.blade"
+              "name": "variable.name.source.bladeLang"
             }
           }
         },
@@ -67,7 +67,7 @@
           "match": "(`.*?`)",
           "captures": {
             "0": {
-              "name": "variable.other.source.blade"
+              "name": "variable.other.source.bladeLang"
             }
           }
         }
@@ -78,11 +78,11 @@
         {
           "captures": {
             "0": {
-              "name": "punctuation.definition.comment.blade"
+              "name": "punctuation.definition.comment.bladeLang"
             }
           },
           "match": "\/\\*\\*\/",
-          "name": "comment.block.empty.blade"
+          "name": "comment.block.empty.bladeLang"
         },
         {
           "include": "#comments-doc-oldschool"
@@ -100,7 +100,7 @@
         {
           "begin": "\/\\*",
           "end": "\\*\/",
-          "name": "comment.block.documentation.blade",
+          "name": "comment.block.documentation.bladeLang",
           "patterns": [
             {
               "include": "#comments-doc-oldschool"
@@ -109,7 +109,7 @@
               "include": "#comments-block"
             },
             {
-              "include": "#bladedoc"
+              "include": "#bladeLangdoc"
             }
           ]
         }
@@ -122,10 +122,10 @@
           "while": "^\\s*\\*\/",
           "patterns": [
             {
-              "include": "#bladedoc"
+              "include": "#bladeLangdoc"
             }
           ],
-          "name": "comment.block.documentation.blade"
+          "name": "comment.block.documentation.bladeLang"
         }
       ]
     },
@@ -137,7 +137,7 @@
         {
           "captures": {
             "1": {
-              "name": "comment.line.double-slash.blade"
+              "name": "comment.line.double-slash.bladeLang"
             }
           },
           "match": "((#).*)$"
@@ -149,7 +149,7 @@
         {
           "begin": "\/\\*",
           "end": "\\*\/",
-          "name": "comment.block.blade",
+          "name": "comment.block.bladeLang",
           "patterns": [
             {
               "include": "#comments-block"
@@ -162,7 +162,7 @@
       "patterns": [
         {
           "match": "@",
-          "name": "storage.type.annotation.blade"
+          "name": "storage.type.annotation.bladeLang"
         }
       ]
     },
@@ -170,25 +170,25 @@
       "patterns": [
         {
           "match": "(?<!\\$)\\b(true|false|nil)\\b(?!\\$)",
-          "name": "constant.language.blade"
+          "name": "constant.language.bladeLang"
         },
         {
           "match": "((?<!\\$)\\b(self|parent)\\b(?!\\$)|(__[a-zA-Z_0-9]+__))",
-          "name": "variable.language.blade"
+          "name": "variable.language.bladeLang"
         },
         {
           "match": "(?<!\\$)\\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)\\b(?!\\$)",
-          "name": "constant.numeric.blade"
+          "name": "constant.numeric.bladeLang"
         },
         {
           "match": "(?<![a-zA-Z0-9_$])([_$]*[A-Z][a-zA-Z0-9_$]*)",
-          "name": "support.class.blade"
+          "name": "support.class.bladeLang"
         },
         {
           "match": "([_$]*[a-z][a-zA-Z0-9_$]*)(<|\\(|\\s+=>)",
           "captures": {
             "1": {
-              "name": "entity.name.function.blade"
+              "name": "entity.name.function.bladeLang"
             }
           }
         }
@@ -198,75 +198,75 @@
       "patterns": [
         {
           "match": "(?<!\\$)\\bas\\b(?!\\$)",
-          "name": "keyword.cast.blade"
+          "name": "keyword.cast.bladeLang"
         },
         {
           "match": "(?<!\\$)\\b(try|catch|finally|die)\\b(?!\\$)",
-          "name": "keyword.control.catch-exception.blade"
+          "name": "keyword.control.catch-exception.bladeLang"
         },
         {
           "match": "(?<!\\$)\\b(break|when|continue|default|else|for|if|in|return|using|while|iter)\\b(?!\\$)",
-          "name": "keyword.control.blade"
+          "name": "keyword.control.bladeLang"
         },
         {
           "match": "(?<!\\$)\\b(or|and|assert)\\b(?!\\$)",
-          "name": "keyword.control.boolean.blade"
+          "name": "keyword.control.boolean.bladeLang"
         },
         {
           "match": "(?<!\\$)\\b(var|class|def)\\b(?!\\$)",
-          "name": "keyword.declaration.blade"
+          "name": "keyword.declaration.bladeLang"
         },
         {
           "match": "(?<!\\$)\\b(is\\!?)\\b(?!\\$)",
-          "name": "keyword.operator.blade"
+          "name": "keyword.operator.bladeLang"
         },
         {
           "match": "\\?\\?",
-          "name": "keyword.operator.conditional.blade"
+          "name": "keyword.operator.conditional.bladeLang"
         },
         {
           "match": "(<<|>>>?|~|\\^|\\||&)",
-          "name": "keyword.operator.bitwise.blade"
+          "name": "keyword.operator.bitwise.bladeLang"
         },
         {
           "match": "((&|\\^|\\||<<|>>?)=)",
-          "name": "keyword.operator.assignment.bitwise.blade"
+          "name": "keyword.operator.assignment.bitwise.bladeLang"
         },
         {
           "match": "(=>)",
-          "name": "keyword.operator.closure.blade"
+          "name": "keyword.operator.closure.bladeLang"
         },
         {
           "match": "(==|!=|<<?=?|>>?=?|(\\.\\.\\.))",
-          "name": "keyword.operator.comparison.blade"
+          "name": "keyword.operator.comparison.bladeLang"
         },
         {
           "match": "(([+*/%-]|\\~)=)",
-          "name": "keyword.operator.assignment.arithmetic.blade"
+          "name": "keyword.operator.assignment.arithmetic.bladeLang"
         },
         {
           "match": "(=)",
-          "name": "keyword.operator.assignment.blade"
+          "name": "keyword.operator.assignment.bladeLang"
         },
         {
           "match": "(\\-\\-|\\+\\+)",
-          "name": "keyword.operator.increment-decrement.blade"
+          "name": "keyword.operator.increment-decrement.bladeLang"
         },
         {
           "match": "(\\-|\\+|\\*|\\/|\\~\\/|%|\\*\\*)",
-          "name": "keyword.operator.arithmetic.blade"
+          "name": "keyword.operator.arithmetic.bladeLang"
         },
         {
           "match": "(!)",
-          "name": "keyword.operator.binary.blade"
+          "name": "keyword.operator.binary.bladeLang"
         },
         {
           "match": "(?<!\\$)\\b(static)\\b(?!\\$)",
-          "name": "storage.modifier.blade"
+          "name": "storage.modifier.bladeLang"
         },
         {
           "match": "(?<!\\$)\\b(?:echo)\\b(?!\\$)",
-          "name": "storage.type.primitive.blade"
+          "name": "storage.type.primitive.bladeLang"
         }
       ]
     },
@@ -275,17 +275,17 @@
         {
           "captures": {
             "2": {
-              "name": "variable.parameter.blade"
+              "name": "variable.parameter.bladeLang"
             },
             "3": {
-              "name": "variable.parameter.blade"
+              "name": "variable.parameter.bladeLang"
             }
           },
           "match": "\\$(\\{([^{}]+)\\})"
         },
         {
           "match": "\\\\.",
-          "name": "constant.character.escape.blade"
+          "name": "constant.character.escape.bladeLang"
         }
       ]
     },
@@ -294,7 +294,7 @@
         {
           "begin": "(?<!\\|r)\"",
           "end": "\"",
-          "name": "string.interpolated.double.blade",
+          "name": "string.interpolated.double.bladeLang",
           "patterns": [
             {
               "match": "\\n",
@@ -308,7 +308,7 @@
         {
           "begin": "r\"",
           "end": "\"",
-          "name": "string.quoted.double.blade",
+          "name": "string.quoted.double.bladeLang",
           "patterns": [
             {
               "match": "\\n",
@@ -319,7 +319,7 @@
         {
           "begin": "(?<!\\|r)'",
           "end": "'",
-          "name": "string.interpolated.single.blade",
+          "name": "string.interpolated.single.bladeLang",
           "patterns": [
             {
               "match": "\\n",
@@ -333,7 +333,7 @@
         {
           "begin": "r'",
           "end": "'",
-          "name": "string.quoted.single.blade",
+          "name": "string.quoted.single.bladeLang",
           "patterns": [
             {
               "match": "\\n",
@@ -347,18 +347,18 @@
       "patterns": [
         {
           "match": ",",
-          "name": "punctuation.comma.blade"
+          "name": "punctuation.comma.bladeLang"
         },
         {
           "match": "\n",
-          "name": "punctuation.terminator.blade"
+          "name": "punctuation.terminator.bladeLang"
         },
         {
           "match": "\\.",
-          "name": "punctuation.dot.blade"
+          "name": "punctuation.dot.bladeLang"
         }
       ]
     }
   },
-  "scopeName": "source.blade"
+  "scopeName": "source.bladeLang"
 }

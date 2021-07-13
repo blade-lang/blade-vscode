@@ -18,9 +18,9 @@
     ],
     "main": "./extension.js",
     "activationEvents": [
-        "onLanguage:blade",
-        "onDebugResolve:blade",
-        "onCommand:blade.checkBladeInstalled"
+        "onLanguage:bladeLang",
+        "onDebugResolve:bladeLang",
+        "onCommand:bladeLang.checkBladeInstalled"
     ],
     "contributes": {
         "themes": [
@@ -32,10 +32,10 @@
         ],
         "languages": [
             {
-                "id": "blade",
+                "id": "bladeLang",
                 "aliases": [
-                    "Blade",
-                    "blade"
+                    "BladeLang",
+                    "bladeLang"
                 ],
                 "extensions": [
                     ".b"
@@ -45,14 +45,14 @@
         ],
         "grammars": [
             {
-                "language": "blade",
-                "scopeName": "source.blade",
+                "language": "bladeLang",
+                "scopeName": "source.bladeLang",
                 "path": "./language/syntaxes/blade.tmLanguage.json"
             }
         ],
         "commands": [
             {
-                "command": "blade.checkBladeInstalled",
+                "command": "bladeLang.checkBladeInstalled",
                 "title": "Check Blade Installation",
                 "category": "Blade"
             }
