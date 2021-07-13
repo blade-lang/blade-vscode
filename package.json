@@ -1,0 +1,56 @@
+{
+    "name": "blade-vscode",
+    "displayName": "blade-vscode",
+    "description": "Support for the Blade programming language",
+    "author": "Ore Richard Muyiwa",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.58.0"
+    },
+    "categories": [
+        "Themes",
+        "Programming Languages"
+    ],
+    "main": "./extension.js",
+    "activationEvents": [
+        "onLanguage:blade",
+        "onDebugResolve:blade",
+        "onCommand:blade.checkBladeInstalled"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "BladeLang",
+                "uiTheme": "vs-dark",
+                "path": "./themes/BladeLang-color-theme.json"
+            }
+        ],
+        "languages": [
+            {
+                "id": "blade",
+                "aliases": [
+                    "Blade",
+                    "blade"
+                ],
+                "extensions": [
+                    ".b"
+                ],
+                "configuration": "./language/configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "blade",
+                "scopeName": "source.blade",
+                "path": "./language/syntaxes/blade.tmLanguage.json"
+            }
+        ],
+        "commands": [
+            {
+                "command": "blade.checkBladeInstalled",
+                "title": "Check Blade Installation",
+                "category": "Blade"
+            }
+        ]
+    }
+}
