@@ -2,7 +2,8 @@
 	"name": "BladeLang",
 	"type": "dark",
 	"colors": {
-		"editor.background": "#263238",
+		// "editor.background": "#263238",
+		"editor.background": "#222222",
 		"editor.foreground": "#eeffff",
 		"activityBarBadge.background": "#007acc",
 		"sideBarTitle.foreground": "#bbbbbb"
