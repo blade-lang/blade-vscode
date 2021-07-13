@@ -52,5 +52,8 @@
                 "category": "Blade"
             }
         ]
+    },
+    "dependencies": {
+        "command-exists-promise": "^2.0.2"
     }
 }

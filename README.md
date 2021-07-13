@@ -7,6 +7,7 @@ This is a minimalistic Visual Studio Code extension for the Blade programming la
 
 1. Syntax Highlighting
 2. Color Theme
+3. Check if Blade is installed or not.
 
 
 ## Planned Features
