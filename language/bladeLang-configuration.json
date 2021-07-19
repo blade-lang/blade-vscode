@@ -90,21 +90,45 @@
       }
     },
     {
-      "beforeText": "^\\s*\\}?\\s*(?:return|continue|break).*?:\\s*$",
+      "beforeText": "^\\s*\\}?\\s*(?:return|continue|break)\\s*$",
       "action": {
         "indent": "outdent"
       }
     },
     {
-      "beforeText": "^\\s*\\/\\*\\*.*?\\s*$",
+      "beforeText": "^\\s*\\/\\*\\*(?!\\/)([^\\*]|\\*(?!\\/))*$",
+      "afterText": "^\\s*\\*\\/$",
       "action": {
+        "indent": "indentOutdent",
         "appendText": " * "
       }
     },
     {
-      "beforeText": "^\\s*\\*\\s*.*?\\s*$",
+      "beforeText": "^\\s*\\/\\*\\*(?!\\/)([^\\*]|\\*(?!\\/))*$",
       "action": {
+        "indent": "none",
         "appendText": " * "
+      }
+    },
+    {
+      "beforeText": "^(\\t|(\\ ))*\\ \\*(\\ ([^\\*]|\\*(?!\\/))*)?$",
+      "action": {
+        "indent": "none",
+        "appendText": "* "
+      }
+    },
+    {
+      "beforeText": "^(\\t|(\\ ))*\\ \\*\\/\\s*$",
+      "action": {
+        "indent": "none",
+        "removeText": 1
+      }
+    },
+    {
+      "beforeText": "^(\\t|(\\ ))*\\ \\*[^/]*\\*\\/\\s*$",
+      "action": {
+        "indent": "none",
+        "removeText": 1
       }
     }
   ],

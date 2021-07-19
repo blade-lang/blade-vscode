@@ -4,11 +4,13 @@
     "description": "Support for the Blade programming language",
     "publisher": "blade-lang",
     "author": "Ore Richard Muyiwa",
-    "version": "0.0.1",
+    "version": "0.1.0",
+    "homepage": "https://github.com/blade-lang/blade-vscode",
     "repository": {
         "type": "git",
         "url": "https://github.com/blade-lang/blade-vscode.git"
     },
+    "icon": "img/icon.png",
     "engines": {
         "vscode": "^1.58.0"
     },
@@ -56,7 +58,15 @@
                 "title": "Check Blade Installation",
                 "category": "Blade"
             }
-        ]
+        ],
+        "menus": {
+            "commandPalette": [
+                {
+                    "command": "bladeLang.checkBladeInstalled",
+                    "when": "editorLangId == bladeLang"
+                }
+            ]
+        }
     },
     "dependencies": {
         "command-exists-promise": "^2.0.2"

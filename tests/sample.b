@@ -105,3 +105,12 @@ class Dog < Animal {
 Animal().setName()
 Animal()._print('hello again')
 Dog().getName()
+
+
+
+def test() {
+  if x == 5 {
+    echo 15
+  }
+}
+
