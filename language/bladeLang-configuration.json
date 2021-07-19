@@ -49,14 +49,6 @@
       ]
     },
     {
-      "open": "`",
-      "close": "`",
-      "notIn": [
-        "string",
-        "comment"
-      ]
-    },
-    {
       "open": "/**",
       "close": " */",
       "notIn": [
@@ -84,10 +76,37 @@
     [
       "\"",
       "\""
-    ],
-    [
-      "`",
-      "`"
     ]
-  ]
+  ],
+  "indentationRules": {
+    "increaseIndentPattern": "^((?!\\/\\/).)*(\\{[^}\"'`]*|\\([^)\"'`]*|\\[[^\\]\"'`]*)$",
+    "decreaseIndentPattern": "^((?!.*?\\/\\*).*\\*/)?\\s*[\\)\\}\\]].*$"
+  },
+  "onEnterRules": [
+    {
+      "beforeText": "^\\s*(?:def|class|for|iter|if|else|while|using|try|catch|finally).*?:\\s*$",
+      "action": {
+        "indent": "indent"
+      }
+    },
+    {
+      "beforeText": "^\\s*\\}?\\s*(?:return|continue|break).*?:\\s*$",
+      "action": {
+        "indent": "outdent"
+      }
+    },
+    {
+      "beforeText": "^\\s*\\/\\*\\*.*?\\s*$",
+      "action": {
+        "appendText": " * "
+      }
+    },
+    {
+      "beforeText": "^\\s*\\*\\s*.*?\\s*$",
+      "action": {
+        "appendText": " * "
+      }
+    }
+  ],
+  "wordPattern": "(-?\\d*\\.\\d\\w*)|([^\\`\\~\\!\\@\\#\\%\\^\\&\\*\\(\\)\\-\\=\\+\\[\\{\\]\\}\\\\\\|\\;\\:\\'\\\"\\,\\.\\<\\>\\/\\?\\s]+)"
 }

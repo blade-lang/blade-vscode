@@ -25,7 +25,7 @@
     "contributes": {
         "themes": [
             {
-                "label": "BladeLang",
+                "label": "Blade",
                 "uiTheme": "vs-dark",
                 "path": "./themes/BladeLang-color-theme.json"
             }
@@ -34,20 +34,20 @@
             {
                 "id": "bladeLang",
                 "aliases": [
-                    "BladeLang",
-                    "bladeLang"
+                    "Blade",
+                    "blade"
                 ],
                 "extensions": [
                     ".b"
                 ],
-                "configuration": "./language/configuration.json"
+                "configuration": "./language/bladeLang-configuration.json"
             }
         ],
         "grammars": [
             {
                 "language": "bladeLang",
                 "scopeName": "source.bladeLang",
-                "path": "./language/syntaxes/blade.tmLanguage.json"
+                "path": "./language/syntaxes/bladeLang.tmLanguage.json"
             }
         ],
         "commands": [
