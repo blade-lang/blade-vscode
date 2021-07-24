@@ -29,6 +29,6 @@ This is a minimalistic Visual Studio Code extension for the Blade programming la
 
 ## Release Notes
 
-### 1.0.0
+### 0.1.0
 
 Initial release.
