@@ -225,16 +225,12 @@
           "name": "keyword.operator.conditional.bladeLang"
         },
         {
-          "match": "(<<|>>>?|~|\\^|\\||&)",
+          "match": "(<<|>>|~|\\^|\\||&)",
           "name": "keyword.operator.bitwise.bladeLang"
         },
         {
           "match": "((&|\\^|\\||<<|>>?)=)",
           "name": "keyword.operator.assignment.bitwise.bladeLang"
-        },
-        {
-          "match": "(=>)",
-          "name": "keyword.operator.closure.bladeLang"
         },
         {
           "match": "(==|!=|<<?=?|>>?=?|(\\.\\.\\.))",
@@ -306,17 +302,6 @@
           ]
         },
         {
-          "begin": "r\"",
-          "end": "\"",
-          "name": "string.quoted.double.bladeLang",
-          "patterns": [
-            {
-              "match": "\\n",
-              "name": "invalid.string.newline"
-            }
-          ]
-        },
-        {
           "begin": "(?<!\\|r)'",
           "end": "'",
           "name": "string.interpolated.single.bladeLang",
@@ -329,22 +314,15 @@
               "include": "#string-interp"
             }
           ]
-        },
-        {
-          "begin": "r'",
-          "end": "'",
-          "name": "string.quoted.single.bladeLang",
-          "patterns": [
-            {
-              "match": "\\n",
-              "name": "invalid.string.newline"
-            }
-          ]
         }
       ]
     },
     "punctuation": {
       "patterns": [
+        {
+          "match": ";",
+          "name": "punctuation.semicolon.bladeLang"
+        },
         {
           "match": ",",
           "name": "punctuation.comma.bladeLang"
