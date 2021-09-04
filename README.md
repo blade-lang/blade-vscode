@@ -1,5 +1,7 @@
 # Blade VSCode Extension
 
+[![Join the chat at https://gitter.im/blade-lang/vscode](https://badges.gitter.im/blade-lang/vscode.svg)](https://gitter.im/blade-lang/vscode?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This is a minimalistic Visual Studio Code extension for the Blade programming language.
 
 
