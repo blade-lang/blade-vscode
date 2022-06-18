@@ -211,9 +211,10 @@
 			}
 		},
 		{
-			"scope": "meta.structure.dictionary.key.python",
+			"scope": "meta.structure.dictionary.key",
 			"settings": {
-				"foreground": "#9cdcfe"
+				"foreground": "#ffe27b",
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -226,6 +227,13 @@
 			"scope": "storage",
 			"settings": {
 				"foreground": "#569cd6"
+			}
+		},
+		{
+			"scope": "storage.type.annotation",
+			"settings": {
+				"foreground": "#c5f3ac",
+				"fontStyle": "italic bold"
 			}
 		},
 		{

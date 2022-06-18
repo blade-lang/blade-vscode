@@ -29,6 +29,9 @@ This is a minimalistic Visual Studio Code extension for the Blade programming la
 
 ## Release Notes
 
-### 0.1.0
+### [0.3.0]
 
-Initial release.
+- Added support for highlighting `do...while` statements.
+- Added support for highlighting binary and octal numbers
+- Special highlights for dictionaries
+- Highlights for regular expressions

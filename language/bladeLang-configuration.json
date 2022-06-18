@@ -84,7 +84,7 @@
   },
   "onEnterRules": [
     {
-      "beforeText": "^\\s*(?:def|class|for|iter|if|else|while|using|try|catch|finally).*?:\\s*$",
+      "beforeText": "^\\s*(?:def|do|class|for|iter|if|else|while|using|try|catch|finally).*?:\\s*$",
       "action": {
         "indent": "indent"
       }
