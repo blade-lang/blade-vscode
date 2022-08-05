@@ -42,7 +42,11 @@
                 "extensions": [
                     ".b"
                 ],
-                "configuration": "./language/bladeLang-configuration.json"
+                "configuration": "./language/bladeLang-configuration.json",
+                "icon": {
+                    "light": "./img/icon.png",
+                    "dark": "./img/icon.png"
+                }
             }
         ],
         "grammars": [
