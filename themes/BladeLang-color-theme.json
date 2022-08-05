@@ -213,7 +213,6 @@
 		{
 			"scope": "meta.structure.dictionary.key",
 			"settings": {
-				"foreground": "#ffe27b",
 				"fontStyle": "italic"
 			}
 		},

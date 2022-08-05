@@ -35,3 +35,7 @@ This is a minimalistic Visual Studio Code extension for the Blade programming la
 - Added support for highlighting binary and octal numbers
 - Special highlights for dictionaries
 - Highlights for regular expressions
+
+### [0.4.0]
+
+- Added icon for Blade files

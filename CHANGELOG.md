@@ -15,3 +15,7 @@ All notable changes to the "blade" extension will be documented in this file.
 
 - Added support for highlighting `do...while` statements.
 - Added support for highlighting binary and octal numbers
+
+## [0.4.0]
+
+- Added blade file custom icon.
