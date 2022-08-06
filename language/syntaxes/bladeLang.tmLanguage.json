@@ -169,7 +169,7 @@
           "name": "meta.structure.dictionary.key.bladeLang"
         },
         {
-          "match": "([^a-zA-Z0-9_\\-])((?![*+?])(?:[^\r\n\\[\/\\]|\\.|\\[(?:[^\r\n\\]\\]|\\.)*\\])+)\\1([imsxuADUJ]+)",
+          "match": "('|\")([^a-zA-Z0-9_\\-])((?![*+?])(?:[^\\r\\n\\[\\/\\\\]|\\\\.|\\[(?:[^\\r\\n\\]\\\\]|\\\\.)*\\])+)\\2([imsxuADUJ]+)?\\1",
           "name": "string.regexp.bladeLang"
         }
       ]
