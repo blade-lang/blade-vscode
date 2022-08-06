@@ -4,7 +4,7 @@
     "description": "Support for the Blade programming language",
     "publisher": "blade-lang",
     "author": "Ore Richard Muyiwa",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "homepage": "https://github.com/blade-lang/blade-vscode",
     "repository": {
         "type": "git",
