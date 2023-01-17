@@ -4,7 +4,7 @@
     "description": "Support for the Blade programming language",
     "publisher": "blade-lang",
     "author": "Ore Richard Muyiwa",
-    "version": "0.4.4",
+    "version": "0.5.0",
     "homepage": "https://github.com/blade-lang/blade-vscode",
     "repository": {
         "type": "git",
@@ -16,7 +16,8 @@
     },
     "categories": [
         "Themes",
-        "Programming Languages"
+        "Programming Languages",
+        "Snippets"
     ],
     "main": "./extension.js",
     "activationEvents": [
@@ -70,7 +71,13 @@
                     "when": "editorLangId == bladeLang"
                 }
             ]
-        }
+        },
+        "snippets": [
+            {
+                "language": "bladeLang",
+                "path": "./snippets/snippets.json"
+            }
+        ]
     },
     "dependencies": {
         "command-exists-promise": "^2.0.2"

@@ -19,3 +19,8 @@ All notable changes to the "blade" extension will be documented in this file.
 ## [0.4.0]
 
 - Added blade file custom icon.
+
+### [0.5.0]
+
+- Changed icon for Blade files.
+- Added support for Blade snippets autocompletion.
