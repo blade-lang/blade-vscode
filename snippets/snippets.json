@@ -72,9 +72,9 @@
     "scope": "source.bladeLang"
   },
   "die": {
-    "prefix": "die",
-    "body": "die Exception('$1')",
-    "description": "die statement",
+    "prefix": "raise",
+    "body": "raise Exception('$1')",
+    "description": "raise exception",
     "scope": "source.bladeLang"
   },
   "static": {
@@ -83,10 +83,10 @@
     "description": "static method",
     "scope": "source.bladeLang"
   },
-  "try": {
-    "prefix": "try",
-    "body": "try {\n  $1\n} catch Exception e {\n  $2\n} finally {\n  $3\n}",
-    "description": "static method",
+  "catch": {
+    "prefix": "catch",
+    "body": " {\n  $1\n} as $2\n",
+    "description": "catch block",
     "scope": "source.bladeLang"
   }
 }

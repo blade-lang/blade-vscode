@@ -79,12 +79,12 @@
     ]
   ],
   "indentationRules": {
-    "increaseIndentPattern": "^((?!\\/\\/).)*(\\{[^}\"'`]*|\\([^)\"'`]*|\\[[^\\]\"'`]*)$",
+    "increaseIndentPattern": "^((?!#).)*(\\{[^}\"']*|\\([^)\"']*|\\[[^\\]\"']*)$",
     "decreaseIndentPattern": "^((?!.*?\\/\\*).*\\*/)?\\s*[\\)\\}\\]].*$"
   },
   "onEnterRules": [
     {
-      "beforeText": "^\\s*(?:def|do|class|for|iter|if|else|while|using|try|catch|finally).*?:\\s*$",
+      "beforeText": "^\\s*(?:def|do|class|for|iter|if|else|while|using|catch).*?:\\s*$",
       "action": {
         "indent": "indent"
       }
